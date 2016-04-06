@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Array对象的方法</title>
+<script type="text/javascript" charset="utf-8">
+	var array = new Array();
+	initArray(array); //初始化数组
+	document.write("排序之前的数组：" + "<br/>" + array + "<br/>");
+	document.write("按升序排列的数组：" + "<br/>" + array.sort(sortNumberAsc) + "<br/>");
+	document.write("按降序排列的数组：" + "<br/>" + array.sort(sortNumberDesc) + "<br/>");
+	document.write("按字符编码排列的数组：" + "<br/>" + array.sort());
+	function sortNumberAsc(a, b) {
+		if (a < b) {
+			return -1;
+		} else if (a == b) {
+			return 0;
+		} else {
+			return 1;
+		}
+	}
+	function sortNumberDesc(a, b) {
+		if (a < b) {
+			return 1;
+		} else if (a == b) {
+			retrun
+			0;
+		} else {
+			return -1;
+		}
+	}
+	function initArray(pramArray) {
+		var a;
+		while (true) {
+			a = prompt("请输入数值，要结束时请输入非数值数据，例如'abc'", "");
+			if (isNaN(a)) {
+				break;
+			} else {
+				pramArray.push(parseFloat(a)); //将输入的值保存到数组最后一个位置
+			}
+		}
+	}
+</script>
+</head>
+<body>
+</body>
+</html>

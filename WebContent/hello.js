@@ -1,0 +1,1 @@
+document.write("»¶Ó­Ñ§Ï°WEB±à³Ì»ù´¡");
