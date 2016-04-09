@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>数组的length属性与splice方法</title>
+<script type="text/javascript" charset="UTF-8">
+document.write("字符串 'This is a test!' 的长度为："+"This is a test!".length+"<br/>");
+document.write("字符串 '这是一个测试！' 的长度为："+"这是一个测试！".length+"<br/>");
+document.write("<br/>");
+var charArr=new Array("a","b","c");
+document.write("数组charArr的值为："+charArr+"，长度为："+charArr.length);
+document.write("<br/>");
+charArr.length=5;
+document.write("执行charArray.length=5后，charArr的值为："+charArr+"，长度为："+charArr.length)
+document.write("<br/>");
+charArr.length=2;
+document.write("执行charArray.length=2后，charArr的值为："+charArr+"，长度为："+charArr.length)
+document.write("<br/><br/>");
+var array=new Array(1,2,3,4,5);
+document.write("数组array的值为："+array+"<br/>");
+document.write("数组array的长度为："+array.length+"<br/>");
+document.write("<br/>");
+array.splice(1,2);
+document.write("执行splice(1,2)方法后：<br/>");
+document.write("数组array的值为："+array+"<br/>");
+document.write("数组array的长度为："+array.length+"<br/>");
+document.write("<br/>");
+array.splice(1,0,6,7,8);
+document.write("执行splice(1,0,6,7,8)方法后：<br/>");
+document.write("数组array的值为："+array+"<br/>");
+document.write("数组array的长度为："+array.length+"<br/>");
+document.write("<br/>");
+array.splice(0,3,9,10);
+document.write("执行splice(0,3,9,10)方法后：<br/>");
+document.write("数组array的值为："+array+"<br/>");
+document.write("数组array的长度为："+array.length+"<br/>");
+document.write("<br/>");
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

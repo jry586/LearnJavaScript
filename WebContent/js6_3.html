@@ -4,14 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <title>数组Array的constructor属性</title>
 <script type="text/javascript" charset="UTF-8">
-var test = new Array();
-if(test.constructor == Array){
-	document.write("test is Array");	
-}else if(test.constructor == Boolean){
-	document.write("test is Boolean");
-}else{
-	document.write("test is unknown type");
-}
+var test = new Array(1,2,3);
+document.write("变量test的constructor为："+test.constructor);
+document.write("<br/>typeof(test):"+typeof(test));
 </script>
 </head>
 <body>
